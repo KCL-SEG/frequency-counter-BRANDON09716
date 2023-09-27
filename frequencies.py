@@ -1,7 +1,12 @@
 """Frequencies function."""
 """ENTER YOUR SOLUTION HERE!"""
-
-def frequencies1(items):
+from collections import Counter
+def frequencies(items):
+    Converted_list = []
     frequencies = {}
-    # Your code goes here
+    for elments in items:
+        converted = str(elments)
+        Converted_list.append(converted)
+        counter = Counter(Converted_list)
+    print(counter)
     return frequencies
